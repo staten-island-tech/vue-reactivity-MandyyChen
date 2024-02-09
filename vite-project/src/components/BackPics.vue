@@ -2,8 +2,8 @@
     <div>
         <h2> {{ Destination.name }}</h2>
         <img :src="Destination.img" alt="" />
-        <h3> {{ clicked }}</h3>
-        <button @clicked="increment"> Click Me </button>
+        <h3> {{ clicked }} </h3>
+        <button @click="increment"> Change Background </button>
     </div>
 </template>
 
@@ -22,7 +22,7 @@ function increment(){
 
 <style scoped> 
 img{
-    width: 250px;
+    width: 400px;
     height: 300px;
     object-fit: cover;
 }
