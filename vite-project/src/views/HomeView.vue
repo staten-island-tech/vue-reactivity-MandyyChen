@@ -11,11 +11,11 @@ import DestCard from "@/components/BackPics.vue";
 const background = [
         {
           name: "Classic",
-          img: "./public/classic.jpg",
+          img: "/classic.jpg",
         },
         {
           name: "Cafe",
-          img: "./public/cafe.jpg",
+          img: "/cafe.jpg",
         },
         {
           name: "Modern",
