@@ -1,41 +1,54 @@
 <template>
     <div class="item">
       <h1>Inventory of Goodies</h1>
+      <ItemCard v-for="x in items"
+        :key="x.name"
+        :Item="x" />
     </div>
   </template>
   
   <script setup>
-import DestCard from "@/components/ItemStash.vue";
+import ItemCard from "@/components/ItemStash.vue";
 const items = [
   {
   name: "ball of yarn",
+  img: "./public/ballofyarn.png",
   },
   {
   name:"rubber ball",
+  img: "./public/rubberball.png",
   },
   {
   name:"fluffy bed",
+  img: "./public/fluffybed.png",
   },
   {
   name:"pom-pom sock",
+  img: "./public/pom-pomsock.png",
   },
   {
   name:"luxurious hammock",
+  img: "./public/luxurioushammock.png",
   },
   {
   name:"kick toy",
+  img: "./public/kicktoy.png",
   },
   {
   name:"paper bag",
+  img: "./public/paperbag.png",
   },
   {
   name:"scratching log",
+  img: "./public/scratchinglog.png",
   },
   {
   name:"goldfish bowl",
+  img: "./public/goldfishbowl.png",
   },
   {
   name:"cowboy hat",
+  img: "./public/cowboyhat.png",
   },
 ]
   </script>

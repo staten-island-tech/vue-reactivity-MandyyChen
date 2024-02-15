@@ -2,7 +2,7 @@
     <div>
         <!-- <h2> {{ Destination.name }}</h2> -->
         <img :src="Destination.img" alt="" /> 
-        <h3> {{ clicked }} </h3>
+        <!-- <h3> {{ clicked }} </h3> -->
         <button @click="increment"> Change Background </button>
     </div>
 </template>
@@ -25,5 +25,8 @@ img{
     width: 400px;
     height: 300px;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 </style>

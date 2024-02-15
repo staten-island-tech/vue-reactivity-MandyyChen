@@ -36,4 +36,4 @@ const background = [
       ]
 </script>
 
-<style scopred></style>
+<style scoped></style>
