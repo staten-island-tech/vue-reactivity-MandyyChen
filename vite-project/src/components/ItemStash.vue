@@ -2,6 +2,7 @@
     <div>
         <h2> {{ Item.name }}</h2>
         <img :src="Item.img" alt="" /> 
+        <button @click="increment"> Use Item </button>
     </div>
 </template>
 
@@ -25,5 +26,16 @@ img{
     object-fit: cover;
     display: flex;
     
+} 
+h2{
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 </style>
