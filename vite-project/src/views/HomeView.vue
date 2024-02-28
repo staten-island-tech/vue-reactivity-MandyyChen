@@ -1,8 +1,10 @@
 <template> 
-<div>
-  <DestCard v-for="destination in background" 
+<div class="container">
+  <!-- <DestCard v-for="destination in background" 
         :key="destination.name"
-        :Destination="destination"/>
+        :Destination="destination"/> -->
+  <button> Change Background </button>
+  <img src="/classic.jpg" alt="">
 </div>
 </template>
 
@@ -36,4 +38,33 @@ const background = [
       ]
 </script>
 
-<style scoped></style>
+<style scoped>
+button{
+   margin: 10px;
+   padding: 10px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+   .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+</style>

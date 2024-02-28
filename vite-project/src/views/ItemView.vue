@@ -64,4 +64,7 @@ const items = [
     
     }
   }
+  .item{
+    font-style: bold;
+  }
   </style>
