@@ -39,11 +39,17 @@ const background = [
 </script>
 
 <style scoped>
+img{
+  width:900px;
+}
+
 button{
    margin: 10px;
    padding: 10px;
-   border-radius: 20px;
+   width:140px;
+   border-radius: 30px;
    cursor: pointer;
+   box-shadow: 0 9px #999;
 }
    .container {
   position: relative;
@@ -51,10 +57,21 @@ button{
   max-width: 400px;
 }
 
+.container button:hover {
+  background-color: rgb(183, 196, 160);
+  color: white;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .container button {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  right: 38%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #f1f1f1;
@@ -63,7 +80,6 @@ button{
   padding: 16px 30px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
   text-align: center;
 }
 

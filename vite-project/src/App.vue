@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/nekologo.svg" width="125" height="125" />
-    
+    <h1> Cat Collecter</h1>
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <nav>
@@ -23,6 +23,11 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+h1{
+ font-weight: bold;
+ font-size: 43px;
 }
 
 .logo {
