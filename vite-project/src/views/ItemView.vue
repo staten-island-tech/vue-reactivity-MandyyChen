@@ -50,7 +50,8 @@ const items = [
   name:"cowboy hat",
   img: "./public/cowboyhat.png",
   },
-]
+];
+
   </script>
 
   <style>
@@ -71,5 +72,5 @@ const items = [
   .title{
     text-align: center;
   }
-  
+
   </style>

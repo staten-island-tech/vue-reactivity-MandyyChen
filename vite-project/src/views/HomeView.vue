@@ -6,11 +6,15 @@
   <button @click="changeBackground"> Change Background </button>
   <img :src="currentBackground.img" :alt="currentBackground.name">
 </div>
+<div class="cat-images">
+  <img :src="currentCat.kittyimg" :alt="currentCat.kittyname" style="max-height: 300px; max-width: 300px;">
+</div>
 </template>
 
 <script setup>
 import DestCard from "@/components/BackPics.vue";
 import { ref, computed, watchEffect } from 'vue';
+
 const background = [
         {
           name: "Classic",
@@ -36,9 +40,52 @@ const background = [
           name: "Zen",
           img: "./public/zen.png",
         },
-      ]
+      ];
+
+      const cat = [
+    {
+        kittyname: 'snowflake',
+        kittyimg: "./public/snowball.png",
+    },
+
+    {
+        kittyname: 'tubbs',
+        kittyimg: "./public/tubbs.png",
+    },
+
+    {
+        kittyname: 'pumpkin',
+        kittyimg: "./public/pumpkin.png",
+    },
+
+    {
+        kittyname: 'billy',
+        kittyimg: "./public/billy.png",
+    },
+
+    {
+        kittyname: 'smokey',
+        kittyimg: "./public/smokey.png",
+    },
+
+    {
+        kittyname: 'misty',
+        kittyimg: "./public/misty.png",
+    },
+
+    {
+        kittyname: 'miso',
+        kittyimg: "./public/miso.png",
+    },
+
+    {
+        kittyname: 'ms.fortune',
+        kittyimg: "./public/msfortune.png",
+    },
+];
 
 let currentIndex = ref(0);
+let currentCatIndex=ref(0);
 
 function changeBackground() {
   currentIndex.value = (currentIndex.value + 1) % background.length;
@@ -46,9 +93,14 @@ function changeBackground() {
 
 const currentBackground = computed(() => background[currentIndex.value]);
 
-watchEffect(() => {
-  console.log(currentBackground.value);
-});
+// watchEffect(() => {
+//   console.log(currentBackground.value);
+// });
+const currentCat = computed(() => cat[currentCatIndex.value]);
+setInterval(() => {
+  currentCatIndex.value = (currentCatIndex.value + 1) % cat.length;
+}, 10000); 
+
 </script>
 
 <style scoped>
@@ -95,6 +147,15 @@ button:active {
   border: none;
   cursor: pointer;
   text-align: center;
+}
+
+.cat-images {
+  position: absolute;
+  max-height: 40px;
+  top: 100%; 
+  left: 50%; 
+  transform: translate(-50%, -0%);
+  z-index: 1; 
 }
 
 </style>

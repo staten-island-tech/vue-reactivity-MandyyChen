@@ -3,22 +3,38 @@
     <div class="card">
         <h2> {{ Item.name }}</h2>
         <img :src="Item.img" alt="" /> 
-        <button @click="increment"> Use Item </button>
+        <button @click="toggleButton" :class="{ 'placed': buttonText === 'Item Placed' }"> {{ buttonText }} </button>
     </div>
     </div>
 </template>
 
 <script setup> 
-import {ref} from "vue";
+import { defineProps, ref, watchEffect } from "vue";
+
 const props = defineProps({
 Item: Object,
 });
 
 //clicker logic
-const clicked = ref(0);
-function increment(){
-    clicked.value++; 
+// const clicked = ref(0);
+// function increment(){
+//     clicked.value++; 
+// }
+const clicked = ref(false);
+
+function toggleButton() {
+    clicked.value = true;
 }
+
+const buttonText = ref("Use Item");
+
+let clickedOnce = false;
+watchEffect(() => {
+    if (clicked.value && !clickedOnce) {
+        buttonText.value = "Item Placed";
+        clickedOnce = true;
+    }
+});
 </script>
 
 <style scoped> 
@@ -69,4 +85,9 @@ function increment(){
     height: 30px;
     display: block;
   }
+
+  .placed{
+    background-color: #a7a59b;
+  }
+  
 </style>

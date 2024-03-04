@@ -3,9 +3,17 @@
   <div class="about">
     <h1>About the Game</h1>
     <hr class="separator">
-    <h3>This is a ultra duper cute game where you can stare at cats. </h3>
+    <h3>This is a ultra duper cute game where you can stare at cats. 
+      <br> Please adjust the size of this website until it looks cute.
+      The format is weird..!
+    </h3>
     <h3> Stolen images and cats from Neko Atsume © </h3>
-    <p> Hi Mr.Whalen, this is my secret message to you because I am special. Thank you! wuigfeiufeuige </p>
+    <p> Hi Mr.Whalen, this is my secret message to you because when I was searching
+    for Google fonts during class, I found this really special one. Since I became super
+    invested in integrating this one font, I forgot to actually find a legitimate font for
+    the rest of the website. Anyways I doubt you saw this and if you did, you probably
+    didn't bother to read so tehe hehe thx for being a gr8 teacher!
+    </p>
   </div>
 </template>
 
