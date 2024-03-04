@@ -13,42 +13,52 @@ const items = [
   {
   name: "ball of yarn",
   img: "./public/ballofyarn.png",
+  price: "$4.00",
   },
   {
   name:"rubber ball",
   img: "./public/rubberball.png",
+  price: "$4.00",
   },
   {
   name:"fluffy bed",
   img: "./public/fluffybed.png",
+  price: "$12.99",
   },
   {
   name:"pom-pom sock",
   img: "./public/pom-pomsock.png",
+  price: "$10.00",
   },
   {
   name:"luxurious hammock",
   img: "./public/luxurioushammock.png",
+  price: "$60.99",
   },
   {
   name:"kick toy",
   img: "./public/kicktoy.png",
+  price: "$7.99",
   },
   {
   name:"paper bag",
   img: "./public/paperbag.png",
+  price: "$2.99",
   },
   {
   name:"scratching log",
   img: "./public/scratchinglog.png",
+  price: "$5.99",
   },
   {
   name:"goldfish bowl",
   img: "./public/goldfishbowl.png",
+  price: "$9.00",
   },
   {
   name:"cowboy hat",
   img: "./public/cowboyhat.png",
+  price: "$8.00",
   },
 ];
 

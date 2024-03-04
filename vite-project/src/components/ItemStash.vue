@@ -2,8 +2,9 @@
     <div class="cards-container">
     <div class="card">
         <h2> {{ Item.name }}</h2>
+        <h3> {{ Item.price }}</h3>
         <img :src="Item.img" alt="" /> 
-        <button @click="toggleButton" :class="{ 'placed': buttonText === 'Item Placed' }"> {{ buttonText }} </button>
+        <button @click="toggleButton" :class="{ 'placed': buttonText === 'Purchased' }"> {{ buttonText }} </button>
     </div>
     </div>
 </template>
@@ -31,7 +32,7 @@ const buttonText = ref("Use Item");
 let clickedOnce = false;
 watchEffect(() => {
     if (clicked.value && !clickedOnce) {
-        buttonText.value = "Item Placed";
+        buttonText.value = "Purchased";
         clickedOnce = true;
     }
 });
@@ -72,6 +73,18 @@ watchEffect(() => {
     margin: 10px;
     background-color: white;
     border: thick solid #e1d297;
+    color: black;
+  }
+
+  h3{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    border: medium solid #e1d297;
     color: black;
   }
   
