@@ -2,6 +2,7 @@
     <div>
         <!-- <h2> {{ Destination.name }}</h2> -->
         <img :src="Destination.img" alt="" /> 
+        
         <!-- <h3> {{ clicked }} </h3> -->
     </div>
 </template>

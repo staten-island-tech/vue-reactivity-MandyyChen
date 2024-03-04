@@ -2,7 +2,7 @@
 <template>
   <div class="about">
     <h1>About the Game</h1>
-    <h2>I am trying to get on https://mikewhalen.tech/projects/ </h2>
+    <hr class="separator">
     <h3>This is a ultra duper cute game where you can stare at cats. </h3>
     <h3> Stolen images and cats from Neko Atsume © </h3>
     <p> Hi Mr.Whalen, this is my secret message to you because I am special. Thank you! wuigfeiufeuige </p>
@@ -21,6 +21,23 @@
     padding: 0px;
     margin: 0 20px;
   }
+}
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center-align all text */
+  padding: 0px;
+  margin: 0 20px;
+}
+
+.separator {
+  width: 100%; 
+  border: none; 
+  border-top: 1px solid #ded67c; 
+  margin: 20px 0; 
 }
 
 p{

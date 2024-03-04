@@ -3,13 +3,14 @@
   <!-- <DestCard v-for="destination in background" 
         :key="destination.name"
         :Destination="destination"/> -->
-  <button> Change Background </button>
-  <img src="/classic.jpg" alt="">
+  <button @click="changeBackground"> Change Background </button>
+  <img :src="currentBackground.img" :alt="currentBackground.name">
 </div>
 </template>
 
 <script setup>
 import DestCard from "@/components/BackPics.vue";
+import { ref, computed, watchEffect } from 'vue';
 const background = [
         {
           name: "Classic",
@@ -36,11 +37,24 @@ const background = [
           img: "./public/zen.png",
         },
       ]
+
+let currentIndex = ref(0);
+
+function changeBackground() {
+  currentIndex.value = (currentIndex.value + 1) % background.length;
+}
+
+const currentBackground = computed(() => background[currentIndex.value]);
+
+watchEffect(() => {
+  console.log(currentBackground.value);
+});
 </script>
 
 <style scoped>
 img{
-  width:900px;
+  width:950px;
+
 }
 
 button{

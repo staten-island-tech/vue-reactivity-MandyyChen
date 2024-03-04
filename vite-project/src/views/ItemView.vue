@@ -1,6 +1,6 @@
 <template>
     <div class="item">
-      <h1>Inventory of Goodies</h1>
+      <h1 class="title">Inventory of Goodies</h1>
       <ItemCard v-for="x in items"
         :key="x.name"
         :Item="x" />
@@ -65,6 +65,11 @@ const items = [
     }
   }
   .item{
-    font-style: bold;
+    font-weight: bold;
   }
+
+  .title{
+    text-align: center;
+  }
+  
   </style>
