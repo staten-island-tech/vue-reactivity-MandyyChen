@@ -12,52 +12,52 @@ import ItemCard from "@/components/ItemStash.vue";
 const items = [
   {
   name: "ball of yarn",
-  img: "./public/ballofyarn.png",
+  img: "/ballofyarn.png",
   price: "$4.00",
   },
   {
   name:"rubber ball",
-  img: "./public/rubberball.png",
+  img: "/rubberball.png",
   price: "$4.00",
   },
   {
   name:"fluffy bed",
-  img: "./public/fluffybed.png",
+  img: "/fluffybed.png",
   price: "$12.99",
   },
   {
   name:"pom-pom sock",
-  img: "./public/pom-pomsock.png",
+  img: "/pom-pomsock.png",
   price: "$10.00",
   },
   {
   name:"luxurious hammock",
-  img: "./public/luxurioushammock.png",
+  img: "/luxurioushammock.png",
   price: "$60.99",
   },
   {
   name:"kick toy",
-  img: "./public/kicktoy.png",
+  img: "/kicktoy.png",
   price: "$7.99",
   },
   {
   name:"paper bag",
-  img: "./public/paperbag.png",
+  img: "./paperbag.png",
   price: "$2.99",
   },
   {
   name:"scratching log",
-  img: "./public/scratchinglog.png",
+  img: "/scratchinglog.png",
   price: "$5.99",
   },
   {
   name:"goldfish bowl",
-  img: "./public/goldfishbowl.png",
+  img: "/goldfishbowl.png",
   price: "$9.00",
   },
   {
   name:"cowboy hat",
-  img: "./public/cowboyhat.png",
+  img: "/cowboyhat.png",
   price: "$8.00",
   },
 ];

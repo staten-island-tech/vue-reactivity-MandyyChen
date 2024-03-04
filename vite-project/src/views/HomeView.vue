@@ -26,61 +26,61 @@ const background = [
         },
         {
           name: "Modern",
-          img: "./public/modern.png",
+          img: "/modern.png",
         },
         {
           name: "Western",
-          img: "./public/western.jpg",
+          img: "/western.jpg",
         },
         {
           name: "Rustic",
-          img: "./public/rustic.jpg",
+          img: "/rustic.jpg",
         },
         {
           name: "Zen",
-          img: "./public/zen.png",
+          img: "/zen.png",
         },
       ];
 
       const cat = [
     {
         kittyname: 'snowflake',
-        kittyimg: "./public/snowball.png",
+        kittyimg: "./snowball.png",
     },
 
     {
         kittyname: 'tubbs',
-        kittyimg: "./public/tubbs.png",
+        kittyimg: "/tubbs.png",
     },
 
     {
         kittyname: 'pumpkin',
-        kittyimg: "./public/pumpkin.png",
+        kittyimg: "/pumpkin.png",
     },
 
     {
         kittyname: 'billy',
-        kittyimg: "./public/billy.png",
+        kittyimg: "/billy.png",
     },
 
     {
         kittyname: 'smokey',
-        kittyimg: "./public/smokey.png",
+        kittyimg: "/smokey.png",
     },
 
     {
         kittyname: 'misty',
-        kittyimg: "./public/misty.png",
+        kittyimg: "/misty.png",
     },
 
     {
         kittyname: 'miso',
-        kittyimg: "./public/miso.png",
+        kittyimg: "/miso.png",
     },
 
     {
         kittyname: 'ms.fortune',
-        kittyimg: "./public/msfortune.png",
+        kittyimg: "/msfortune.png",
     },
 ];
 
