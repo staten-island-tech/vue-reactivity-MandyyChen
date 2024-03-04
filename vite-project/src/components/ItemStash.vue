@@ -10,7 +10,6 @@
 
 <script setup> 
 import { defineProps, ref, watchEffect } from "vue";
-import { changeBackground, currentBackground, currentCat } from "@/components/BackPics.vue";
 
 const props = defineProps({
 Item: Object,
