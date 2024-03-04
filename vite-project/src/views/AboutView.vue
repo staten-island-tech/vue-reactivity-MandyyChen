@@ -3,9 +3,9 @@
   <div class="about">
     <h1>About the Game</h1>
     <hr class="separator">
-    <h3>This is a ultra duper cute game where you can stare at cats. 
+    <h3>This is a game where you can stare at cats. 
       <br> Please adjust the size of this website until it looks cute.
-      The format is weird..!
+      <br> DO NOT FULL SCREEN OR WILL BE WONKY..i'm sorry.
     </h3>
     <h3> Stolen images and cats from Neko Atsume © </h3>
     <p> Hi Mr.Whalen, this is my secret message to you because when I was searching

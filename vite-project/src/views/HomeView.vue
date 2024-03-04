@@ -103,6 +103,10 @@ setInterval(() => {
 
 </script>
 
+<script>
+export { changeBackground, currentBackground, currentCat };
+</script>
+
 <style scoped>
 img{
   width:950px;
