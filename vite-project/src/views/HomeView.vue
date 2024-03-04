@@ -152,7 +152,7 @@ button:active {
 .cat-images {
   position: absolute;
   max-height: 40px;
-  top: 100%; 
+  top: 70%; 
   left: 50%; 
   transform: translate(-50%, -0%);
   z-index: 1; 
