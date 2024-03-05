@@ -2,9 +2,9 @@
     <div class="cards-container">
     <div class="card">
         <h2> {{ Item.name }}</h2>
-        <h3> {{ Item.price }}</h3>
+        <h3> ${{ Item.price }}.00</h3>
         <img :src="Item.img" alt="" /> 
-        <button @click="toggleButton" :class="{ 'placed': buttonText === 'Purchased' }"> {{ buttonText }} </button>
+        <button @click="toggleButton(); purchasedCard()" :class="{ 'placed': buttonText === 'Purchased' }"> {{ buttonText }} </button>
     </div>
     </div>
 </template>
@@ -13,7 +13,7 @@
 import { defineProps, ref, watchEffect } from "vue";
 
 const props = defineProps({
-Item: Object,
+Item: Object, total:Number
 });
 
 //clicker logic
@@ -27,7 +27,15 @@ function toggleButton() {
     clicked.value = true;
 }
 
-const buttonText = ref("Use Item");
+const emit = defineEmits([
+    "add"
+])
+
+function purchasedCard() {
+  emit("add");
+}
+
+const buttonText = ref("Buy Item");
 
 let clickedOnce = false;
 watchEffect(() => {

@@ -1,64 +1,85 @@
 <template>
+
+  <PurchasedList
+:money="money"
+:total="total"
+/>
+
     <div class="item">
       <h1 class="title">Inventory of Goodies</h1>
       <ItemCard v-for="x in items"
         :key="x.name"
-        :Item="x" />
+        :Item="x" 
+        @add="purchasedCard(x)"/>
     </div>
   </template>
   
   <script setup>
 import ItemCard from "@/components/ItemStash.vue";
+import PurchasedList from "@/components/PurchasedList.vue";
+import {ref} from "vue";
+
+const money = 
+ref([])
+
+const total= 
+ref(0)
+
+function purchasedCard(x) {
+total.value+= x.price
+money.value.push(x)
+}
+
 const items = [
   {
   name: "ball of yarn",
-  img: "/ballofyarn.png",
-  price: "$4.00",
+  img: "/ballofyarn.PNG",
+  price: 4.00,
   },
   {
   name:"rubber ball",
-  img: "/rubberball.png",
-  price: "$4.00",
+  img: "/rubberball.PNG",
+  price: 4.00,
   },
   {
   name:"fluffy bed",
-  img: "/fluffybed.png",
-  price: "$12.99",
+  img: "/fluffybed.PNG",
+  price: 12.00,
   },
   {
   name:"pom-pom sock",
-  img: "/pom-pomsock.png",
-  price: "$10.00",
+  img: "/pom-pomsock.PNG",
+  price: 10.00,
   },
   {
   name:"luxurious hammock",
-  img: "/luxurioushammock.png",
-  price: "$60.99",
+  img: "/luxurioushammock.PNG",
+  price: 60.00,
   },
   {
   name:"kick toy",
-  img: "/kicktoy.png",
-  price: "$7.99",
+  img: "/kicktoy.PNG",
+  price: 7.00,
   },
   {
   name:"paper bag",
-  img: "./paperbag.png",
-  price: "$2.99",
+  img: "./paperbag.PNG",
+  price: 2.00,
   },
   {
   name:"scratching log",
-  img: "/scratchinglog.png",
-  price: "$5.99",
+  img: "/scratchinglog.PNG",
+  price: 5.00,
   },
   {
   name:"goldfish bowl",
-  img: "/goldfishbowl.png",
-  price: "$9.00",
+  img: "/goldfishbowl.PNG",
+  price: 9.00,
   },
   {
   name:"cowboy hat",
-  img: "/cowboyhat.png",
-  price: "$8.00",
+  img: "/cowboyhat.PNG",
+  price: 8.00,
   },
 ];
 

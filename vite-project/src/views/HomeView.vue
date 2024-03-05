@@ -30,7 +30,7 @@ const background = [
         },
         {
           name: "Western",
-          img: "/western.jpg",
+          img: "/western.JPG",
         },
         {
           name: "Rustic",
